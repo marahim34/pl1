@@ -5,7 +5,7 @@ public class App {
 		Scanner userInput = new Scanner(System.in);
 
 		System.out.println(
-				"Enter a password. The password must be at least 8 characters long and contain at least one uppercase letter (A-Z), one lowercase letter (a-z), and one digit (0-9).");
+				"Enter a password. The password must be at least 8 characters long and contain at least one uppercase letter (A-Z), one lowercase letter (a-z) and one digit (0-9).");
 
 		while (true) {
 			String password = userInput.nextLine();
@@ -19,11 +19,9 @@ public class App {
 				System.out.println(result);
 				System.out.println("Please try again");
 			}
-
 		}
 
 		userInput.close();
-
 	}
 
 	public static String validPassword(String password) {
